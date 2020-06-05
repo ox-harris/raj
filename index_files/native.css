@@ -1,0 +1,1934 @@
+@charset "utf-8";
+
+:root {
+	/*
+	 * ---------
+	 * COLOR
+	 * ---------
+	 */
+	--color-r: 0;
+	--color-g: 0;
+	--color-b: 0;
+	--color-a: 1;
+	/*
+	 * ---------
+	 * BACKGROUND
+	 * ---------
+	 */
+	--background-color-r: 0;
+	--background-color-g: 0;
+	--background-color-b: 0;
+	--background-color-a: 1;
+	/* ---------------------- */
+	--gradient-start-color-r: 0;
+	--gradient-start-color-g: 0;
+	--gradient-start-color-b: 0;
+	--gradient-start-color-a: 1;
+	/* ---------------------- */
+	--gradient-end-color-r: 0;
+	--gradient-end-color-g: 0;
+	--gradient-end-color-b: 0;
+	--gradient-end-color-a: 1;
+	/*
+	 * ---------
+	 * BORDER
+	 * ---------
+	 */
+	--border-color-r: 0;
+	--border-color-g: 0;
+	--border-color-b: 0;
+	--border-color-a: 1;
+	/*
+	 * ---------
+	 * SHADOW
+	 * ---------
+	 */
+	--shadow-color-r: 0;
+	--shadow-color-g: 0;
+	--shadow-color-b: 0;
+	--shadow-color-a: 1;
+	/*
+	 * ---------
+	 * SHADOW PARAMS
+	 * ---------
+	 */
+	--shadow-x: 0px;
+	--shadow-y: 0px;
+	--shadow-blur: 2.5px;
+	--shadow-spread: 0px;
+	--shadow-inset: ;
+	/* 
+	 * --------
+	 * OTHER
+	 * --------
+	 */
+	--shadow-xs: 2.5px;
+	--shadow-sm: 5px;
+	--shadow-md: 10px;
+	--shadow-lg: 15px;
+	--shadow-xl: 20px;
+	
+	--opacity-xs:0.1;
+	--opacity-sm:0.3;
+	--opacity-md:0.5;
+	--opacity-lg:0.7;
+	--opacity-xl:0.9;
+}
+
+/** ------------------------------------------------------------------ */
+/** COLOR ------------------------------------------------------------ */
+/** ------------------------------------------------------------------ */
+
+.color-transparent,
+/* --kids--- */
+.kids--color-transparent > * {
+	--color-a: 0;
+}
+.color-opacity-xs,
+/* --kids--- */
+.kids--color-opacity-xs > * {
+	--color-a: var(--opacity-xs);
+}
+.color-opacity-sm,
+/* --kids--- */
+.kids--color-opacity-sm > * {
+	--color-a: var(--opacity-sm);
+}
+.color-opacity-md,
+/* --kids--- */
+.kids--color-opacity-md > * {
+	--color-a: var(--opacity-md);
+}
+.color-opacity-lg,
+/* --kids--- */
+.kids--color-opacity-lg > * {
+	--color-a: var(--opacity-lg);
+}
+.color-opacity-xl,
+/* --kids--- */
+.kids--color-opacity-xl > * {
+	--color-a: var(--opacity-xl);
+}
+.color-opaque,
+/* --kids--- */
+.kids--color-opaque > * {
+	--color-a: 1;
+}
+
+/** --HOVER-- **/
+
+.hover-color-transparent,
+/* --kids--- */
+.kids--hover-color-transparent > * {
+	--hover-color-a: 0;
+}
+.hover-color-opacity-xs,
+/* --kids--- */
+.kids--hover-color-opacity-xs > * {
+	--hover-color-a: var(--opacity-xs);
+}
+.hover-color-opacity-sm,
+/* --kids--- */
+.kids--hover-color-opacity-sm > * {
+	--hover-color-a: var(--opacity-sm);
+}
+.hover-color-opacity-md,
+/* --kids--- */
+.kids--hover-color-opacity-md > * {
+	--hover-color-a: var(--opacity-md);
+}
+.hover-color-opacity-lg,
+/* --kids--- */
+.kids--hover-color-opacity-lg > * {
+	--hover-color-a: var(--opacity-lg);
+}
+.hover-color-opacity-xl,
+/* --kids--- */
+.kids--hover-color-opacity-xl > * {
+	--hover-color-a: var(--opacity-xl);
+}
+.hover-color-opaque,
+/* --kids--- */
+.kids--hover-color-opaque > * {
+	--hover-color-a: 1;
+}
+
+/** --ACTIVE-- **/
+
+.active-color-transparent,
+/* --kids--- */
+.kids--active-color-transparent > * {
+	--active-color-a: 0;
+}
+.active-color-opacity-xs,
+/* --kids--- */
+.kids--active-color-opacity-xs > * {
+	--active-color-a: var(--opacity-xs);
+}
+.active-color-opacity-sm,
+/* --kids--- */
+.kids--active-color-opacity-sm > * {
+	--active-color-a: var(--opacity-sm);
+}
+.active-color-opacity-md,
+/* --kids--- */
+.kids--active-color-opacity-md > * {
+	--active-color-a: var(--opacity-md);
+}
+.active-color-opacity-lg,
+/* --kids--- */
+.kids--active-color-opacity-lg > * {
+	--active-color-a: var(--opacity-lg);
+}
+.active-color-opacity-xl,
+/* --kids--- */
+.kids--active-color-opacity-xl > * {
+	--active-color-a: var(--opacity-xl);
+}
+.active-color-opaque,
+/* --kids--- */
+.kids--active-color-opaque > * {
+	--active-color-a: 1;
+}
+
+/** ------------------------------------------------------------------ */
+/** BACKGROUND ------------------------------------------------------- */
+/** ------------------------------------------------------------------ */
+
+.background-transparent,
+/* --kids--- */
+.kids--background-color-transparent > * {
+	--background-color-a: 0;
+}
+.background-opacity-xs,
+/* --kids--- */
+.kids--background-color-opacity-xs > * {
+	--background-color-a: var(--opacity-xs);
+}
+.background-opacity-sm,
+/* --kids--- */
+.kids--background-color-opacity-sm > * {
+	--background-color-a: var(--opacity-sm);
+}
+.background-opacity-md,
+/* --kids--- */
+.kids--background-color-opacity-md > * {
+	--background-color-a: var(--opacity-md);
+}
+.background-opacity-lg,
+/* --kids--- */
+.kids--background-color-opacity-lg > * {
+	--background-color-a: var(--opacity-lg);
+}
+.background-opacity-xl,
+/* --kids--- */
+.kids--background-color-opacity-xl > * {
+	--background-color-a: var(--opacity-xl);
+}
+.background-opaque,
+/* --kids--- */
+.kids--background-color-opaque > * {
+	--background-color-a: 1;
+}
+
+/** --GRADIENT-- **/
+
+.gradient-start-transparent {
+	--gradient-start-color-a: 0;
+}
+.gradient-start-opacity-xs {
+	--gradient-start-color-a: var(--opacity-xs);
+}
+.gradient-start-opacity-sm {
+	--gradient-start-color-a: var(--opacity-sm);
+}
+.gradient-start-opacity-md {
+	--gradient-start-color-a: var(--opacity-md);
+}
+.gradient-start-opacity-lg {
+	--gradient-start-color-a: var(--opacity-lg);
+}
+.gradient-start-opacity-xl {
+	--gradient-start-color-a: var(--opacity-xl);
+}
+.gradient-start-opaque {
+	--gradient-start-color-a: 1;
+}
+
+/** --------------- **/
+
+.gradient-end-transparent {
+	--gradient-end-color-a: 0;
+}
+.gradient-end-opacity-xs {
+	--gradient-end-color-a: var(--opacity-xs);
+}
+.gradient-end-opacity-sm {
+	--gradient-end-color-a: var(--opacity-sm);
+}
+.gradient-end-opacity-md {
+	--gradient-end-color-a: var(--opacity-md);
+}
+.gradient-end-opacity-lg {
+	--gradient-end-color-a: var(--opacity-lg);
+}
+.gradient-end-opacity-xl {
+	--gradient-end-color-a: var(--opacity-xl);
+}
+.gradient-end-opaque {
+	--gradient-end-color-a: 1;
+}
+
+/** --HOVER-- **/
+
+.hover-background-transparent,
+/* --kids--- */
+.kids--hover-background-color-transparent > * {
+	--hover-background-color-a: 0;
+}
+.hover-background-opacity-xs,
+/* --kids--- */
+.kids--hover-background-color-opacity-xs > * {
+	--hover-background-color-a: var(--opacity-xs);
+}
+.hover-background-opacity-sm,
+/* --kids--- */
+.kids--hover-background-color-opacity-sm > * {
+	--hover-background-color-a: var(--opacity-sm);
+}
+.hover-background-opacity-md,
+/* --kids--- */
+.kids--hover-background-color-opacity-md > * {
+	--hover-background-color-a: var(--opacity-md);
+}
+.hover-background-opacity-lg,
+/* --kids--- */
+.kids--hover-background-color-opacity-lg > * {
+	--hover-background-color-a: var(--opacity-lg);
+}
+.hover-background-opacity-xl,
+/* --kids--- */
+.kids--hover-background-color-opacity-xl > * {
+	--hover-background-color-a: var(--opacity-xl);
+}
+.hover-background-opaque,
+/* --kids--- */
+.kids--hover-background-color-opaque > * {
+	--hover-background-color-a: 1;
+}
+
+/** --HOVER-GRADIENT-- **/
+
+.hover-gradient-start-transparent {
+	--hover-gradient-start-color-a: 0;
+}
+.hover-gradient-start-opacity-xs {
+	--hover-gradient-start-color-a: var(--opacity-xs);
+}
+.hover-gradient-start-opacity-sm {
+	--hover-gradient-start-color-a: var(--opacity-sm);
+}
+.hover-gradient-start-opacity-md {
+	--hover-gradient-start-color-a: var(--opacity-md);
+}
+.hover-gradient-start-opacity-lg {
+	--hover-gradient-start-color-a: var(--opacity-lg);
+}
+.hover-gradient-start-opacity-xl {
+	--hover-gradient-start-color-a: var(--opacity-xl);
+}
+.hover-gradient-start-opaque {
+	--hover-gradient-start-color-a: 1;
+}
+
+/** --------------- **/
+
+.hover-gradient-end-transparent {
+	--hover-gradient-end-color-a: 0;
+}
+.hover-gradient-end-opacity-xs {
+	--hover-gradient-end-color-a: var(--opacity-xs);
+}
+.hover-gradient-end-opacity-sm {
+	--hover-gradient-end-color-a: var(--opacity-sm);
+}
+.hover-gradient-end-opacity-md {
+	--hover-gradient-end-color-a: var(--opacity-md);
+}
+.hover-gradient-end-opacity-lg {
+	--hover-gradient-end-color-a: var(--opacity-lg);
+}
+.hover-gradient-end-opacity-xl {
+	--hover-gradient-end-color-a: var(--opacity-xl);
+}
+.hover-gradient-end-opaque {
+	--hover-gradient-end-color-a: 1;
+}
+
+/** --ACTIVE-- **/
+
+.active-background-transparent,
+/* --kids--- */
+.kids--active-background-color-transparent > * {
+	--active-background-color-a: 0;
+}
+.active-background-opacity-xs,
+/* --kids--- */
+.kids--active-background-color-opacity-xs > * {
+	--active-background-color-a: var(--opacity-xs);
+}
+.active-background-opacity-sm,
+/* --kids--- */
+.kids--active-background-color-opacity-sm > * {
+	--active-background-color-a: var(--opacity-sm);
+}
+.active-background-opacity-md,
+/* --kids--- */
+.kids--active-background-color-opacity-md > * {
+	--active-background-color-a: var(--opacity-md);
+}
+.active-background-opacity-lg,
+/* --kids--- */
+.kids--active-background-color-opacity-lg > * {
+	--active-background-color-a: var(--opacity-lg);
+}
+.active-background-opacity-xl,
+/* --kids--- */
+.kids--active-background-color-opacity-xl > * {
+	--active-background-color-a: var(--opacity-xl);
+}
+.active-background-opaque,
+/* --kids--- */
+.kids--active-background-color-opaque > * {
+	--active-background-color-a: 1;
+}
+
+/** --ACTIVE-GRADIENT-- **/
+
+.active-gradient-start-transparent {
+	--active-gradient-start-color-a: 0;
+}
+.active-gradient-start-opacity-xs {
+	--active-gradient-start-color-a: var(--opacity-xs);
+}
+.active-gradient-start-opacity-sm {
+	--active-gradient-start-color-a: var(--opacity-sm);
+}
+.active-gradient-start-opacity-md {
+	--active-gradient-start-color-a: var(--opacity-md);
+}
+.active-gradient-start-opacity-lg {
+	--active-gradient-start-color-a: var(--opacity-lg);
+}
+.active-gradient-start-opacity-xl {
+	--active-gradient-start-color-a: var(--opacity-xl);
+}
+.active-gradient-start-opaque {
+	--active-gradient-start-color-a: 1;
+}
+
+/** --------------- **/
+
+.active-gradient-end-transparent {
+	--active-gradient-end-color-a: 0;
+}
+.active-gradient-end-opacity-xs {
+	--active-gradient-end-color-a: var(--opacity-xs);
+}
+.active-gradient-end-opacity-sm {
+	--active-gradient-end-color-a: var(--opacity-sm);
+}
+.active-gradient-end-opacity-md {
+	--active-gradient-end-color-a: var(--opacity-md);
+}
+.active-gradient-end-opacity-lg {
+	--active-gradient-end-color-a: var(--opacity-lg);
+}
+.active-gradient-end-opacity-xl {
+	--active-gradient-end-color-a: var(--opacity-xl);
+}
+.active-gradient-end-opaque {
+	--active-gradient-end-color-a: 1;
+}
+
+/** ------------------------------------------------------------------ */
+/** BORDER ----------------------------------------------------------- */
+/** ------------------------------------------------------------------ */
+
+.border-transparent,
+/* --kids--- */
+.kids--border-transparent > * {
+	--border-color-a: 0;
+}
+.border-opacity-xs,
+/* --kids--- */
+.kids--border-opacity-xs > * {
+	--border-color-a: var(--opacity-xs);
+}
+.border-opacity-sm,
+/* --kids--- */
+.kids--border-opacity-sm > * {
+	--border-color-a: var(--opacity-sm);
+}
+.border-opacity-md,
+/* --kids--- */
+.kids--border-opacity-md > * {
+	--border-color-a: var(--opacity-md);
+}
+.border-opacity-lg,
+/* --kids--- */
+.kids--border-opacity-lg > * {
+	--border-color-a: var(--opacity-lg);
+}
+.border-opacity-xl,
+/* --kids--- */
+.kids--border-opacity-xl > * {
+	--border-color-a: var(--opacity-xl);
+}
+.border-opaque,
+/* --kids--- */
+.kids--border-opaque > * {
+	--border-color-a: 1;
+}
+
+/** --HOVER-- **/
+
+.hover-border-transparent,
+/* --kids--- */
+.kids--hover-border-transparent > * {
+	--hover-border-color-a: 0;
+}
+.hover-border-opacity-xs,
+/* --kids--- */
+.kids--hover-border-opacity-xs > * {
+	--hover-border-color-a: var(--opacity-xs);
+}
+.hover-border-opacity-sm,
+/* --kids--- */
+.kids--hover-border-opacity-sm > * {
+	--hover-border-color-a: var(--opacity-sm);
+}
+.hover-border-opacity-md,
+/* --kids--- */
+.kids--hover-border-opacity-md > * {
+	--hover-border-color-a: var(--opacity-md);
+}
+.hover-border-opacity-lg,
+/* --kids--- */
+.kids--hover-border-opacity-lg > * {
+	--hover-border-color-a: var(--opacity-lg);
+}
+.hover-border-opacity-xl,
+/* --kids--- */
+.kids--hover-border-opacity-xl > * {
+	--hover-border-color-a: var(--opacity-xl);
+}
+.hover-border-opaque,
+/* --kids--- */
+.kids--hover-border-opaque > * {
+	--hover-border-color-a: 1;
+}
+
+/** --ACTIVE-- **/
+
+.active-border-transparent,
+/* --kids--- */
+.kids--active-border-transparent > * {
+	--active-border-color-a: 0;
+}
+.active-border-opacity-xs,
+/* --kids--- */
+.kids--active-border-opacity-xs > * {
+	--active-border-color-a: var(--opacity-xs);
+}
+.active-border-opacity-sm,
+/* --kids--- */
+.kids--active-border-opacity-sm > * {
+	--active-border-color-a: var(--opacity-sm);
+}
+.active-border-opacity-md,
+/* --kids--- */
+.kids--active-border-opacity-md > * {
+	--active-border-color-a: var(--opacity-md);
+}
+.active-border-opacity-lg,
+/* --kids--- */
+.kids--active-border-opacity-lg > * {
+	--active-border-color-a: var(--opacity-lg);
+}
+.active-border-opacity-xl,
+/* --kids--- */
+.kids--active-border-opacity-xl > * {
+	--active-border-color-a: var(--opacity-xl);
+}
+.active-border-opaque,
+/* --kids--- */
+.kids--active-border-opaque > * {
+	--active-border-color-a: 1;
+}
+
+/** ------------------------------------------------------------------ */
+/** SHADOW ----------------------------------------------------------- */
+/** ------------------------------------------------------------------ */
+
+.shadow-transparent,
+/* --kids--- */
+.kids--shadow-transparent > * {
+	--shadow-color-a: 0;
+}
+.shadow-opacity-xs,
+/* --kids--- */
+.kids--shadow-opacity-xs > * {
+	--shadow-color-a: var(--opacity-xs);
+}
+.shadow-opacity-sm,
+/* --kids--- */
+.kids--shadow-opacity-sm > * {
+	--shadow-color-a: var(--opacity-sm);
+}
+.shadow-opacity-md,
+/* --kids--- */
+.kids--shadow-opacity-md > * {
+	--shadow-color-a: var(--opacity-md);
+}
+.shadow-opacity-lg,
+/* --kids--- */
+.kids--shadow-opacity-lg > * {
+	--shadow-color-a: var(--opacity-lg);
+}
+.shadow-opacity-xl,
+/* --kids--- */
+.kids--shadow-opacity-xl > * {
+	--shadow-color-a: var(--opacity-xl);
+}
+.shadow-opaque,
+/* --kids--- */
+.kids--shadow-opaque > * {
+	--shadow-color-a: 1;
+}
+
+/** --HOVER-- **/
+
+.hover-shadow-transparent,
+/* --kids--- */
+.kids--hover-shadow-transparent > * {
+	--hover-shadow-color-a: 0;
+}
+.hover-shadow-opacity-xs,
+/* --kids--- */
+.kids--hover-shadow-opacity-xs > * {
+	--hover-shadow-color-a: var(--opacity-xs);
+}
+.hover-shadow-opacity-sm,
+/* --kids--- */
+.kids--hover-shadow-opacity-sm > * {
+	--hover-shadow-color-a: var(--opacity-sm);
+}
+.hover-shadow-opacity-md,
+/* --kids--- */
+.kids--hover-shadow-opacity-md > * {
+	--hover-shadow-color-a: var(--opacity-md);
+}
+.hover-shadow-opacity-lg,
+/* --kids--- */
+.kids--hover-shadow-opacity-lg > * {
+	--hover-shadow-color-a: var(--opacity-lg);
+}
+.hover-shadow-opacity-xl,
+/* --kids--- */
+.kids--hover-shadow-opacity-xl > * {
+	--hover-shadow-color-a: var(--opacity-xl);
+}
+.hover-shadow-opaque,
+/* --kids--- */
+.kids--hover-shadow-opaque > * {
+	--hover-shadow-color-a: 1;
+}
+
+/** --ACTIVE-- **/
+
+.active-shadow-transparent,
+/* --kids--- */
+.kids--active-shadow-transparent > * {
+	--active-shadow-color-a: 0;
+}
+.active-shadow-opacity-xs,
+/* --kids--- */
+.kids--active-shadow-opacity-xs > * {
+	--active-shadow-color-a: var(--opacity-xs);
+}
+.active-shadow-opacity-sm,
+/* --kids--- */
+.kids--active-shadow-opacity-sm > * {
+	--active-shadow-color-a: var(--opacity-sm);
+}
+.active-shadow-opacity-md,
+/* --kids--- */
+.kids--active-shadow-opacity-md > * {
+	--active-shadow-color-a: var(--opacity-md);
+}
+.active-shadow-opacity-lg,
+/* --kids--- */
+.kids--active-shadow-opacity-lg > * {
+	--active-shadow-color-a: var(--opacity-lg);
+}
+.active-shadow-opacity-xl,
+/* --kids--- */
+.kids--active-shadow-opacity-xl > * {
+	--active-shadow-color-a: var(--opacity-xl);
+}
+.active-shadow-opaque,
+/* --kids--- */
+.kids--active-shadow-opaque > * {
+	--active-shadow-color-a: 1;
+}
+
+/**
+ * -------------------
+ * SHADOW BLUR
+ * -------------------
+ */
+
+.shadow-blur-xs,
+/* --kids--- */
+.kids--shadow-blur-xs > * {
+	--shadow-blur: var(--shadow-xs);
+}
+.shadow-blur-sm,
+/* --kids--- */
+.kids--shadow-blur-sm > * {
+	--shadow-blur: var(--shadow-sm);
+}
+.shadow-blur-md,
+/* --kids--- */
+.kids--shadow-blur-md > * {
+	--shadow-blur: var(--shadow-md);
+}
+.shadow-blur-lg,
+/* --kids--- */
+.kids--shadow-blur-lg > * {
+	--shadow-blur: var(--shadow-lg);
+}
+.shadow-blur-xl,
+/* --kids--- */
+.kids--shadow-blur-xl > * {
+	--shadow-blur: var(--shadow-xl);
+}
+/* -------------- */
+.hover-shadow-blur-xs,
+/* --kids--- */
+.kids--hover-shadow-blur-xs > * {
+	--hover-shadow-blur: var(--shadow-xs);
+}
+.hover-shadow-blur-sm,
+/* --kids--- */
+.kids--hover-shadow-blur-sm > * {
+	--hover-shadow-blur: var(--shadow-sm);
+}
+.hover-shadow-blur-md,
+/* --kids--- */
+.kids--hover-shadow-blur-md > * {
+	--hover-shadow-blur: var(--shadow-md);
+}
+.hover-shadow-blur-lg,
+/* --kids--- */
+.kids--hover-shadow-blur-lg > * {
+	--hover-shadow-blur: var(--shadow-lg);
+}
+.hover-shadow-blur-xl,
+/* --kids--- */
+.kids--hover-shadow-blur-xl > * {
+	--hover-shadow-blur: var(--shadow-xl);
+}
+/* -------------- */
+.active-shadow-blur-xs,
+/* --kids--- */
+.kids--active-shadow-blur-xs > * {
+	--active-shadow-blur: var(--shadow-xs);
+}
+.active-shadow-blur-sm,
+/* --kids--- */
+.kids--active-shadow-blur-sm > * {
+	--active-shadow-blur: var(--shadow-sm);
+}
+.active-shadow-blur-md,
+/* --kids--- */
+.kids--active-shadow-blur-md > * {
+	--active-shadow-blur: var(--shadow-md);
+}
+.active-shadow-blur-lg,
+/* --kids--- */
+.kids--active-shadow-blur-lg > * {
+	--active-shadow-blur: var(--shadow-lg);
+}
+.active-shadow-blur-xl,
+/* --kids--- */
+.kids--active-shadow-blur-xl > * {
+	--active-shadow-blur: var(--shadow-xl);
+}
+
+/**
+ * -------------------
+ * SHADOW SPREAD
+ * -------------------
+ */
+
+.shadow-spread-xs,
+/* --kids--- */
+.kids--shadow-spread-xs > * {
+	--shadow-spread: var(--shadow-xs);
+}
+.shadow-spread-sm,
+/* --kids--- */
+.kids--shadow-spread-sm > * {
+	--shadow-spread: var(--shadow-sm);
+}
+.shadow-spread-md,
+/* --kids--- */
+.kids--shadow-spread-md > * {
+	--shadow-spread: var(--shadow-md);
+}
+.shadow-spread-lg,
+/* --kids--- */
+.kids--shadow-spread-lg > * {
+	--shadow-spread: var(--shadow-lg);
+}
+.shadow-spread-xl,
+/* --kids--- */
+.kids--shadow-spread-xl > * {
+	--shadow-spread: var(--shadow-xl);
+}
+
+/** --IN-- **/
+
+.shadow-spread-in-xs,
+/* --kids--- */
+.kids--shadow-spread-in-xs > * {
+	--shadow-spread: calc(var(--shadow-xs) * -1);
+}
+.shadow-spread-in-sm,
+/* --kids--- */
+.kids--shadow-spread-in-sm > * {
+	--shadow-spread: calc(var(--shadow-sm) * -1);
+}
+.shadow-spread-in-md,
+/* --kids--- */
+.kids--shadow-spread-in-md > * {
+	--shadow-spread: calc(var(--shadow-md) * -1);
+}
+.shadow-spread-in-lg,
+/* --kids--- */
+.kids--shadow-spread-in-lg > * {
+	--shadow-spread: calc(var(--shadow-lg) * -1);
+}
+.shadow-spread-in-xl,
+/* --kids--- */
+.kids--shadow-spread-in-xl > * {
+	--shadow-spread: calc(var(--shadow-xl) * -1);
+}
+
+/** --HOVER-- **/
+
+.hover-shadow-spread-xs,
+/* --kids--- */
+.kids--hover-shadow-spread-xs > * {
+	--hover-shadow-spread: var(--shadow-xs);
+}
+.hover-shadow-spread-sm,
+/* --kids--- */
+.kids--hover-shadow-spread-sm > * {
+	--hover-shadow-spread: var(--shadow-sm);
+}
+.hover-shadow-spread-md,
+/* --kids--- */
+.kids--hover-shadow-spread-md > * {
+	--hover-shadow-spread: var(--shadow-md);
+}
+.hover-shadow-spread-lg,
+/* --kids--- */
+.kids--hover-shadow-spread-lg > * {
+	--hover-shadow-spread: var(--shadow-lg);
+}
+.hover-shadow-spread-xl,
+/* --kids--- */
+.kids--hover-shadow-spread-xl > * {
+	--hover-shadow-spread: var(--shadow-xl);
+}
+
+/** --HOVER-IN-- **/
+
+.hover-shadow-spread-in-xs,
+/* --kids--- */
+.kids--hover-shadow-spread-in-xs > * {
+	--hover-shadow-spread: calc(var(--shadow-xs) * -1);
+}
+.hover-shadow-spread-in-sm,
+/* --kids--- */
+.kids--hover-shadow-spread-in-sm > * {
+	--hover-shadow-spread: calc(var(--shadow-sm) * -1);
+}
+.hover-shadow-spread-in-md,
+/* --kids--- */
+.kids--hover-shadow-spread-in-md > * {
+	--hover-shadow-spread: calc(var(--shadow-md) * -1);
+}
+.hover-shadow-spread-in-lg,
+/* --kids--- */
+.kids--hover-shadow-spread-in-lg > * {
+	--hover-shadow-spread: calc(var(--shadow-lg) * -1);
+}
+.hover-shadow-spread-in-xl,
+/* --kids--- */
+.kids--hover-shadow-spread-in-xl > * {
+	--hover-shadow-spread: calc(var(--shadow-xl) * -1);
+}
+
+/** --ACTIVE-- **/
+
+.active-shadow-spread-xs,
+/* --kids--- */
+.kids--active-shadow-spread-xs > * {
+	--active-shadow-spread: var(--shadow-xs);
+}
+.active-shadow-spread-sm,
+/* --kids--- */
+.kids--active-shadow-spread-sm > * {
+	--active-shadow-spread: var(--shadow-sm);
+}
+.active-shadow-spread-md,
+/* --kids--- */
+.kids--active-shadow-spread-md > * {
+	--active-shadow-spread: var(--shadow-md);
+}
+.active-shadow-spread-lg,
+/* --kids--- */
+.kids--active-shadow-spread-lg > * {
+	--active-shadow-spread: var(--shadow-lg);
+}
+.active-shadow-spread-xl,
+/* --kids--- */
+.kids--active-shadow-spread-xl > * {
+	--active-shadow-spread: var(--shadow-xl);
+}
+
+/** --ACTIVE-IN-- **/
+
+.active-shadow-spread-in-xs,
+/* --kids--- */
+.kids--active-shadow-spread-in-xs > * {
+	--active-shadow-spread: calc(var(--shadow-xs) * -1);
+}
+.active-shadow-spread-in-sm,
+/* --kids--- */
+.kids--active-shadow-spread-in-sm > * {
+	--active-shadow-spread: calc(var(--shadow-sm) * -1);
+}
+.active-shadow-spread-in-md,
+/* --kids--- */
+.kids--active-shadow-spread-in-md > * {
+	--active-shadow-spread: calc(var(--shadow-md) * -1);
+}
+.active-shadow-spread-in-lg,
+/* --kids--- */
+.kids--active-shadow-spread-in-lg > * {
+	--active-shadow-spread: calc(var(--shadow-lg) * -1);
+}
+.active-shadow-spread-in-xl,
+/* --kids--- */
+.kids--active-shadow-spread-in-xl > * {
+	--active-shadow-spread: calc(var(--shadow-xl) * -1);
+}
+
+/**
+ * -------------------
+ * SHADOW DIRECTIONS
+ * -------------------
+ */
+
+.shadow-top-xs {
+	--shadow-y: calc(var(--shadow-xs) * -1);
+}
+.shadow-top-sm {
+	--shadow-y: calc(var(--shadow-sm) * -1);
+}
+.shadow-top-md {
+	--shadow-y: calc(var(--shadow-md) * -1);
+}
+.shadow-top-lg {
+	--shadow-y: calc(var(--shadow-lg) * -1);
+}
+.shadow-top-xl {
+	--shadow-y: calc(var(--shadow-xl) * -1);
+}
+
+/** ------------ **/
+
+.shadow-btm-xs {
+	--shadow-y: var(--shadow-xs);
+}
+.shadow-btm-sm {
+	--shadow-y: var(--shadow-sm);
+}
+.shadow-btm-md {
+	--shadow-y: var(--shadow-md);
+}
+.shadow-btm-lg {
+	--shadow-y: var(--shadow-lg);
+}
+.shadow-btm-xl {
+	--shadow-y: var(--shadow-xl);
+}
+
+/** ------------ **/
+
+.shadow-lft-xs {
+	--shadow-x: calc(var(--shadow-xs) * -1);
+}
+.shadow-lft-sm {
+	--shadow-x: calc(var(--shadow-sm) * -1);
+}
+.shadow-lft-md {
+	--shadow-x: calc(var(--shadow-md) * -1);
+}
+.shadow-lft-lg {
+	--shadow-x: calc(var(--shadow-lg) * -1);
+}
+.shadow-lft-xl {
+	--shadow-x: calc(var(--shadow-xl) * -1);
+}
+
+/** ------------ **/
+
+.shadow-rt-xs {
+	--shadow-x: var(--shadow-xs);
+}
+.shadow-rt-sm {
+	--shadow-x: var(--shadow-sm);
+}
+.shadow-rt-md {
+	--shadow-x: var(--shadow-md);
+}
+.shadow-rt-lg {
+	--shadow-x: var(--shadow-lg);
+}
+.shadow-rt-xl {
+	--shadow-x: var(--shadow-xl);
+}
+
+
+/** APPLICATION ------------------------------------------------------------------------------------------------------ **/
+
+
+/* 
+ * --------
+ * COLOR
+ * --------
+ */
+ 
+/* apply the defined theme in scope */
+.apply-theme,
+/* e.g. with-theme-primary */
+[class*=with-theme-],
+/* apply the defined color in scope */
+.apply-color,
+/* e.g: with-color-red */
+[class*=with-color],
+/* apply the defined color in scope to kids */
+.kids--apply-color > *,
+/* e.g: kids--with-color-red */
+[class*=kids--with-color] > * {
+	color:rgba(var(--color-r), var(--color-g), var(--color-b), var(--color-a)) !important;
+}
+/* hover */
+.apply-theme.with-states[aria-highlighted],
+.apply-theme.with-states:hover,
+.with-states[aria-highlighted][class*=with-theme-],
+.with-states[class*=with-theme-]:hover,
+.apply-color.with-states[aria-highlighted],
+.apply-color.with-states:hover,
+/*-----*/
+[class*=with-hover-color][aria-highlighted],
+[class*=with-hover-color]:hover,
+/* --kids--- */
+.kids--apply-color.kids--with-states > [aria-highlighted],
+.kids--apply-color.kids--with-states > :hover,
+/*-----*/
+[class*=kids--with-hover-color] > [aria-highlighted],
+[class*=kids--with-hover-color] > :hover {
+	/** Defined --hover-color-* rgba channels, or we fallback to base **/
+	color:rgba(var(--hover-color-r, var(--color-r)), var(--hover-color-g, var(--color-g)), var(--hover-color-b, var(--color-b)), var(--hover-color-a, var(--color-a))) !important;
+}
+/* active */
+.apply-theme.with-states[aria-current],
+.apply-theme.with-states[aria-selected],
+.apply-theme.with-states[aria-checked],
+.apply-theme.with-states.active,
+.apply-theme.with-states:active,
+.with-states[class*=with-theme-][aria-current],
+.with-states[class*=with-theme-][aria-selected],
+.with-states[class*=with-theme-][aria-checked],
+.with-states[class*=with-theme-].active,
+.with-states[class*=with-theme-]:active,
+.apply-color.with-states[aria-current],
+.apply-color.with-states[aria-selected],
+.apply-color.with-states[aria-checked],
+.apply-color.with-states.active,
+.apply-color.with-states:active,
+/*-----*/
+[class*=with-active-color][aria-current],
+[class*=with-active-color][aria-selected],
+[class*=with-active-color][aria-checked],
+[class*=with-active-color].active,
+[class*=with-active-color]:active,
+/* --kids--- */
+.kids--apply-color.kids--with-states > [aria-current],
+.kids--apply-color.kids--with-states > [aria-selected],
+.kids--apply-color.kids--with-states > [aria-checked],
+.kids--apply-color.kids--with-states > .active,
+.kids--apply-color.kids--with-states > :active,
+/*-----*/
+[class*=kids--with-active-color] > [aria-current],
+[class*=kids--with-active-color] > [aria-selected],
+[class*=kids--with-active-color] > [aria-checked],
+[class*=kids--with-active-color] > .active,
+[class*=kids--with-active-color] > :active {
+	/** Defined --active-color-* rgba channels, or we fallback --hover-color-* rgba channels, or we fallback to base **/
+	color:rgba(var(--active-color-r, var(--hover-color-r, var(--color-r))), var(--active-color-g, var(--hover-color-g, var(--color-g))), var(--active-color-b, var(--hover-color-b, var(--color-b))), var(--active-color-a, var(--hover-color-a, var(--color-a)))) !important;
+}
+/* focus */
+.apply-theme.with-states:focus,
+.apply-color.with-states:focus,
+/*-----*/
+[class*=with-focus-color]:focus,
+/* --kids--- */
+.kids--apply-color.kids--with-states > :focus,
+/*-----*/
+[class*=kids--with-focus-color] > :focus {
+	/** Defined --focus-color-* rgba channels, or we fallback --hover-color-* rgba channels, or we fallback to base **/
+	color:rgba(var(--focus-color-r, var(--hover-color-r, var(--color-r))), var(--focus-color-g, var(--hover-color-g, var(--color-g))), var(--focus-color-b, var(--hover-color-b, var(--color-b))), var(--focus-color-a, var(--hover-color-a, var(--color-a)))) !important;
+}
+/* target */
+.apply-theme.with-states:target,
+.apply-color.with-states:target,
+/*-----*/
+[class*=with-target-color]:target,
+/* --kids--- */
+.kids--apply-color.kids--with-states > :target,
+/*-----*/
+[class*=kids--with-target-color] > :target {
+	/** Defined --target-color-* rgba channels, or we fallback --hover-color-* rgba channels, or we fallback to base **/
+	color:rgba(var(--target-color-r, var(--hover-color-r, var(--color-r))), var(--target-color-g, var(--hover-color-g, var(--color-g))), var(--target-color-b, var(--hover-color-b, var(--color-b))), var(--target-color-a, var(--hover-color-a, var(--color-a)))) !important;
+}
+/* disabled */
+.apply-theme.with-states:disabled,
+.apply-color.with-states:disabled,
+/*-----*/
+[class*=with-disabled-color]:disabled,
+/* --kids--- */
+.kids--apply-color.kids--with-states > :disabled,
+/*-----*/
+[class*=kids--with-disabled-color] > :disabled {
+	/** Defined --disabled-color-* rgba channels, or we fallback to base **/
+	color:rgba(var(--disabled-color-r, var(--color-r)), var(--disabled-color-g, var(--color-g)), var(--disabled-color-b, var(--color-b)), var(--disabled-color-a, var(--color-a))) !important;
+}
+
+/* 
+ * --------
+ * BACKGROUND
+ * --------
+ */
+ 
+/* apply the defined theme in scope */
+.apply-theme,
+/* e.g. with-theme-primary */
+[class*=with-theme-],
+/* apply the defined background-color in scope */
+.apply-background-color,
+/* e.g: with-background-color-red */
+[class*=with-background-color],
+/* apply the defined background-color in scope to kids */
+.kids--apply-background-color > *,
+/* e.g: kids--with-background-color-red */
+[class*=kids--with-background-color] > * {
+	background-color:rgba(var(--background-color-r), var(--background-color-g), var(--background-color-b), var(--background-color-a)) !important;
+}
+/* hover */
+.apply-theme.with-states[aria-highlighted],
+.apply-theme.with-states:hover,
+.with-states[aria-highlighted][class*=with-theme-],
+.with-states[class*=with-theme-]:hover,
+.apply-background-color.with-states[aria-highlighted],
+.apply-background-color.with-states:hover,
+/*-----*/
+[class*=with-hover-background-color][aria-highlighted],
+[class*=with-hover-background-color]:hover,
+/* --kids--- */
+.kids--apply-background-color.kids--with-states > [aria-highlighted],
+.kids--apply-background-color.kids--with-states > :hover,
+/*-----*/
+[class*=kids--with-hover-background-color] > [aria-highlighted],
+[class*=kids--with-hover-background-color] > :hover {
+	/** Defined --hover-background-color-* rgba channels, or we fallback to base **/
+	background-color:rgba(var(--hover-background-color-r, var(--background-color-r)), var(--hover-background-color-g, var(--background-color-g)), var(--hover-background-color-b, var(--background-color-b)), var(--hover-background-color-a, var(--background-color-a))) !important;
+}
+/* active */
+.apply-theme.with-states[aria-current],
+.apply-theme.with-states[aria-selected],
+.apply-theme.with-states[aria-checked],
+.apply-theme.with-states.active,
+.apply-theme.with-states:active,
+.with-states[class*=with-theme-][aria-current],
+.with-states[class*=with-theme-][aria-selected],
+.with-states[class*=with-theme-][aria-checked],
+.with-states[class*=with-theme-].active,
+.with-states[class*=with-theme-]:active,
+.apply-background-color.with-states[aria-current],
+.apply-background-color.with-states[aria-selected],
+.apply-background-color.with-states[aria-checked],
+.apply-background-color.with-states.active,
+.apply-background-color.with-states:active,
+/*-----*/
+[class*=with-active-background-color][aria-current],
+[class*=with-active-background-color][aria-selected],
+[class*=with-active-background-color][aria-checked],
+[class*=with-active-background-color].active,
+[class*=with-active-background-color]:active,
+/* --kids--- */
+.kids--apply-background-color.kids--with-states > [aria-current],
+.kids--apply-background-color.kids--with-states > [aria-selected],
+.kids--apply-background-color.kids--with-states > [aria-checked],
+.kids--apply-background-color.kids--with-states > .active,
+.kids--apply-background-color.kids--with-states > :active,
+/*-----*/
+[class*=kids--with-active-background-color] > [aria-current],
+[class*=kids--with-active-background-color] > [aria-selected],
+[class*=kids--with-active-background-color] > [aria-checked],
+[class*=kids--with-active-background-color] > .active,
+[class*=kids--with-active-background-color] > :active {
+	/** Defined --active-background-color-* rgba channels, or we fallback --hover-background-color-* rgba channels, or we fallback to base **/
+	background-color:rgba(var(--active-background-color-r, var(--hover-background-color-r, var(--background-color-r))), var(--active-background-color-g, var(--hover-background-color-g, var(--background-color-g))), var(--active-background-color-b, var(--hover-background-color-b, var(--background-color-b))), var(--active-background-color-a, var(--hover-background-color-a, var(--background-color-a)))) !important;
+}
+/* focus */
+.apply-theme.with-states:focus,
+.apply-background-color.with-states:focus,
+/*-----*/
+[class*=with-focus-background-color]:focus,
+/* --kids--- */
+.kids--apply-background-color.kids--with-states > :focus,
+/*-----*/
+[class*=kids--with-focus-background-color] > :focus {
+	/** Defined --focus-background-color-* rgba channels, or we fallback --hover-background-color-* rgba channels, or we fallback to base **/
+	background-color:rgba(var(--focus-background-color-r, var(--hover-background-color-r, var(--background-color-r))), var(--focus-background-color-g, var(--hover-background-color-g, var(--background-color-g))), var(--focus-background-color-b, var(--hover-background-color-b, var(--background-color-b))), var(--focus-background-color-a, var(--hover-background-color-a, var(--background-color-a)))) !important;
+}
+/* target */
+.apply-theme.with-states:target,
+.apply-background-color.with-states:target,
+/*-----*/
+[class*=with-target-background-color]:target,
+/* --kids--- */
+.kids--apply-background-color.kids--with-states > :target,
+/*-----*/
+[class*=kids--with-target-background-color] > :target {
+	/** Defined --target-background-color-* rgba channels, or we fallback --hover-background-color-* rgba channels, or we fallback to base **/
+	background-color:rgba(var(--target-background-color-r, var(--hover-background-color-r, var(--background-color-r))), var(--target-background-color-g, var(--hover-background-color-g, var(--background-color-g))), var(--target-background-color-b, var(--hover-background-color-b, var(--background-color-b))), var(--target-background-color-a, var(--hover-background-color-a, var(--background-color-a)))) !important;
+}
+/* disabled */
+.apply-theme.with-states:disabled,
+.apply-background-color.with-states:disabled,
+/*-----*/
+[class*=with-disabled-background-color]:disabled,
+/* --kids--- */
+.kids--apply-background-color.kids--with-states > :disabled,
+/*-----*/
+[class*=kids--with-disabled-background-color] > :disabled {
+	/** Defined --disabled-background-color-* rgba channels, or we fallback to base **/
+	background-color:rgba(var(--disabled-background-color-r, var(--background-color-r)), var(--disabled-background-color-g, var(--background-color-g)), var(--disabled-background-color-b, var(--background-color-b)), var(--disabled-background-color-a, var(--background-color-a))) !important;
+}
+
+/** --GRADIENT-- **/
+
+/* apply the defined gradient in scope */
+.apply-gradient,
+/* e.g: with-gradient-red */
+[class*=with-gradient],
+/* apply the defined gradient in scope to kids */
+.kids--apply-gradient > *,
+/* e.g: kids--with-gradient-red */
+[class*=kids--with-gradient] > * {
+	background-image:linear-gradient(var(--gradient-angle, 18180deg), rgba(var(--gradient-start-color-r), var(--gradient-start-color-g), var(--gradient-start-color-b), var(--gradient-start-color-a)) var(--gradient-start-position, 0%), rgba(var(--gradient-end-color-r), var(--gradient-end-color-g), var(--gradient-end-color-b), var(--gradient-end-color-a)) var(--gradient-end-position, 100%));
+}
+/* hover */
+.apply-gradient.with-states[aria-highlighted],
+.apply-gradient.with-states:hover,
+/*-----*/
+[class*=with-hover-gradient][aria-highlighted],
+[class*=with-hover-gradient]:hover,
+/* --kids--- */
+.kids--apply-gradient.kids--with-states > [aria-highlighted],
+.kids--apply-gradient.kids--with-states > :hover,
+/*-----*/
+[class*=kids--with-hover-gradient] > [aria-highlighted],
+[class*=kids--with-hover-gradient] > :hover {
+	/** Defined --hover-gradient-* rgba channels, or we fallback to base **/
+	background-image:linear-gradient(var(--hover-gradient-angle, var(--gradient-angle, 180deg)), rgba(var(--hover-gradient-start-color-r, var(--gradient-start-color-r)), var(--hover-gradient-start-color-g, var(--gradient-start-color-g)), var(--hover-gradient-start-color-b, var(--gradient-start-color-b)), var(--hover-gradient-start-color-a, var(--gradient-start-color-a))) var(--hover-gradient-start-position, var(--gradient-start-position, 0%)), rgba(var(--hover-gradient-end-color-r, var(--gradient-end-color-r)), var(--hover-gradient-end-color-g, var(--gradient-end-color-g)), var(--hover-gradient-end-color-b, var(--gradient-end-color-b)), var(--hover-gradient-end-color-a, var(--gradient-end-color-a))) var(--hover-gradient-end-position, var(--gradient-end-position, 100%)));
+}
+/* active */
+.apply-gradient.with-states[aria-current],
+.apply-gradient.with-states[aria-selected],
+.apply-gradient.with-states[aria-checked],
+.apply-gradient.with-states.active,
+.apply-gradient.with-states:active,
+/*-----*/
+[class*=with-active-gradient][aria-current],
+[class*=with-active-gradient][aria-selected],
+[class*=with-active-gradient][aria-checked],
+[class*=with-active-gradient].active,
+[class*=with-active-gradient]:active,
+/* --kids--- */
+.kids--apply-gradient.kids--with-states > [aria-current],
+.kids--apply-gradient.kids--with-states > [aria-selected],
+.kids--apply-gradient.kids--with-states > [aria-checked],
+.kids--apply-gradient.kids--with-states > .active,
+.kids--apply-gradient.kids--with-states > :active,
+/*-----*/
+[class*=kids--with-active-gradient] > [aria-current],
+[class*=kids--with-active-gradient] > [aria-selected],
+[class*=kids--with-active-gradient] > [aria-checked],
+[class*=kids--with-active-gradient] > .active,
+[class*=kids--with-active-gradient] > :active {
+	/** Defined --active-gradient-* rgba channels, or we fallback --hover-gradient-* rgba channels, or we fallback to base **/
+	background-image:linear-gradient(var(--active-gradient-angle, var(--hover-gradient-angle, var(--gradient-angle, 180deg))), rgba(var(--active-gradient-start-color-r, var(--hover-gradient-start-color-r, var(--gradient-start-color-r))), var(--active-gradient-start-color-g, var(--hover-gradient-start-color-g, var(--gradient-start-color-g))), var(--active-gradient-start-color-b, var(--hover-gradient-start-color-b, var(--gradient-start-color-b))), var(--active-gradient-start-color-a, var(--hover-gradient-start-color-a, var(--gradient-start-color-a)))) var(--active-gradient-start-position, var(--hover-gradient-start-position, var(--gradient-start-position, 0%))), rgba(var(--active-gradient-end-color-r, var(--hover-gradient-end-color-r, var(--gradient-end-color-r))), var(--active-gradient-end-color-g, var(--hover-gradient-end-color-g, var(--gradient-end-color-g))), var(--active-gradient-end-color-b, var(--hover-gradient-end-color-b, var(--gradient-end-color-b))), var(--active-gradient-end-color-a, var(--hover-gradient-end-color-a, var(--gradient-end-color-a)))) var(--active-gradient-end-position, var(--hover-gradient-end-position, var(--gradient-end-position, 100%))));
+}
+/* focus */
+.apply-gradient.with-states:focus,
+/*-----*/
+[class*=with-focus-gradient]:focus,
+/* --kids--- */
+.kids--apply-gradient.kids--with-states > :focus,
+/*-----*/
+[class*=kids--with-focus-gradient] > :focus {
+	/** Defined --focus-gradient-* rgba channels, or we fallback --hover-gradient-* rgba channels, or we fallback to base **/
+	background-image:linear-gradient(var(--focus-gradient-angle, var(--hover-gradient-angle, var(--gradient-angle, 180deg))), rgba(var(--focus-gradient-start-color-r, var(--hover-gradient-start-color-r, var(--gradient-start-color-r))), var(--focus-gradient-start-color-g, var(--hover-gradient-start-color-g, var(--gradient-start-color-g))), var(--focus-gradient-start-color-b, var(--hover-gradient-start-color-b, var(--gradient-start-color-b))), var(--focus-gradient-start-color-a, var(--hover-gradient-start-color-a, var(--gradient-start-color-a)))) var(--focus-gradient-start-position, var(--hover-gradient-start-position, var(--gradient-start-position, 0%))), rgba(var(--focus-gradient-end-color-r, var(--hover-gradient-end-color-r, var(--gradient-end-color-r))), var(--focus-gradient-end-color-g, var(--hover-gradient-end-color-g, var(--gradient-end-color-g))), var(--focus-gradient-end-color-b, var(--hover-gradient-end-color-b, var(--gradient-end-color-b))), var(--focus-gradient-end-color-a, var(--hover-gradient-end-color-a, var(--gradient-end-color-a)))) var(--focus-gradient-end-position, var(--hover-gradient-end-position, var(--gradient-end-position, 100%))));
+}
+/* target */
+.apply-gradient.with-states:target,
+/*-----*/
+[class*=with-target-gradient]:target,
+/* --kids--- */
+.kids--apply-gradient.kids--with-states > :target,
+/*-----*/
+[class*=kids--with-target-gradient] > :target {
+	/** Defined --target-gradient-* rgba channels, or we fallback --hover-gradient-* rgba channels, or we fallback to base **/
+	background-image:linear-gradient(var(--target-gradient-angle, var(--hover-gradient-angle, var(--gradient-angle, 180deg))), rgba(var(--target-gradient-start-color-r, var(--hover-gradient-start-color-r, var(--gradient-start-color-r))), var(--target-gradient-start-color-g, var(--hover-gradient-start-color-g, var(--gradient-start-color-g))), var(--target-gradient-start-color-b, var(--hover-gradient-start-color-b, var(--gradient-start-color-b))), var(--target-gradient-start-color-a, var(--hover-gradient-start-color-a, var(--gradient-start-color-a)))) var(--target-gradient-start-position, var(--hover-gradient-start-position, var(--gradient-start-position, 0%))), rgba(var(--target-gradient-end-color-r, var(--hover-gradient-end-color-r, var(--gradient-end-color-r))), var(--target-gradient-end-color-g, var(--hover-gradient-end-color-g, var(--gradient-end-color-g))), var(--target-gradient-end-color-b, var(--hover-gradient-end-color-b, var(--gradient-end-color-b))), var(--target-gradient-end-color-a, var(--hover-gradient-end-color-a, var(--gradient-end-color-a)))) var(--target-gradient-end-position, var(--hover-gradient-end-position, var(--gradient-end-position, 100%))));
+}
+/* disabled */
+.apply-gradient.with-states:disabled,
+/*-----*/
+[class*=with-disabled-gradient]:disabled,
+/* --kids--- */
+.kids--apply-gradient.kids--with-states > :disabled,
+/*-----*/
+[class*=kids--with-disabled-gradient] > :disabled {
+	/** Defined --disabled-gradient-* rgba channels, or we fallback --hover-gradient-* rgba channels, or we fallback to base **/
+	background-image:linear-gradient(var(--disabled-gradient-angle, var(--hover-gradient-angle, var(--gradient-angle, 180deg))), rgba(var(--disabled-gradient-start-color-r, var(--hover-gradient-start-color-r, var(--gradient-start-color-r))), var(--disabled-gradient-start-color-g, var(--hover-gradient-start-color-g, var(--gradient-start-color-g))), var(--disabled-gradient-start-color-b, var(--hover-gradient-start-color-b, var(--gradient-start-color-b))), var(--disabled-gradient-start-color-a, var(--hover-gradient-start-color-a, var(--gradient-start-color-a)))) var(--disabled-gradient-start-position, var(--hover-gradient-start-position, var(--gradient-start-position, 0%))), rgba(var(--disabled-gradient-end-color-r, var(--hover-gradient-end-color-r, var(--gradient-end-color-r))), var(--disabled-gradient-end-color-g, var(--hover-gradient-end-color-g, var(--gradient-end-color-g))), var(--disabled-gradient-end-color-b, var(--hover-gradient-end-color-b, var(--gradient-end-color-b))), var(--disabled-gradient-end-color-a, var(--hover-gradient-end-color-a, var(--gradient-end-color-a)))) var(--disabled-gradient-end-position, var(--hover-gradient-end-position, var(--gradient-end-position, 100%))));
+}
+
+/* 
+ * --------
+ * BORDER
+ * --------
+ */
+ 
+/* apply the defined theme in scope */
+.apply-theme,
+/* e.g. with-theme-primary */
+[class*=with-theme-],
+/* apply the defined border-color in scope */
+.apply-border-color,
+/* e.g: with-border-color-red */
+[class*=with-border-color],
+/* apply the defined border-color in scope to kids */
+.kids--apply-border-color > *,
+/* e.g: kids--with-border-color-red */
+[class*=kids--with-border-color] > * {
+	border-color:rgba(var(--border-color-r), var(--border-color-g), var(--border-color-b), var(--border-color-a)) !important;
+}
+/* hover */
+.apply-theme.with-states[aria-highlighted],
+.apply-theme.with-states:hover,
+.with-states[aria-highlighted][class*=with-theme-],
+.with-states[class*=with-theme-]:hover,
+.apply-border-color.with-states[aria-highlighted],
+.apply-border-color.with-states:hover,
+/*-----*/
+[class*=with-hover-border-color][aria-highlighted],
+[class*=with-hover-border-color]:hover,
+/* --kids--- */
+.kids--apply-border-color.kids--with-states > [aria-highlighted],
+.kids--apply-border-color.kids--with-states > :hover,
+/*-----*/
+[class*=kids--with-hover-border-color] > [aria-highlighted],
+[class*=kids--with-hover-border-color] > :hover {
+	/** Defined --hover-border-color-* rgba channels, or we fallback to base **/
+	border-color:rgba(var(--hover-border-color-r, var(--border-color-r)), var(--hover-border-color-g, var(--border-color-g)), var(--hover-border-color-b, var(--border-color-b)), var(--hover-border-color-a, var(--border-color-a))) !important;
+}
+/* active */
+.apply-theme.with-states[aria-current],
+.apply-theme.with-states[aria-selected],
+.apply-theme.with-states[aria-checked],
+.apply-theme.with-states.active,
+.apply-theme.with-states:active,
+.with-states[class*=with-theme-][aria-current],
+.with-states[class*=with-theme-][aria-selected],
+.with-states[class*=with-theme-][aria-checked],
+.with-states[class*=with-theme-].active,
+.with-states[class*=with-theme-]:active,
+.apply-border-color.with-states[aria-current],
+.apply-border-color.with-states[aria-selected],
+.apply-border-color.with-states[aria-checked],
+.apply-border-color.with-states.active,
+.apply-border-color.with-states:active,
+/*-----*/
+[class*=with-active-border-color][aria-current],
+[class*=with-active-border-color][aria-selected],
+[class*=with-active-border-color][aria-checked],
+[class*=with-active-border-color].active,
+[class*=with-active-border-color]:active,
+/* --kids--- */
+.kids--apply-border-color.kids--with-states > [aria-current],
+.kids--apply-border-color.kids--with-states > [aria-selected],
+.kids--apply-border-color.kids--with-states > [aria-checked],
+.kids--apply-border-color.kids--with-states > .active,
+.kids--apply-border-color.kids--with-states > :active,
+/*-----*/
+[class*=kids--with-active-border-color] > [aria-current],
+[class*=kids--with-active-border-color] > [aria-selected],
+[class*=kids--with-active-border-color] > [aria-checked],
+[class*=kids--with-active-border-color] > .active,
+[class*=kids--with-active-border-color] > :active {
+	/** Defined --active-border-color-* rgba channels, or we fallback --hover-border-color-* rgba channels, or we fallback to base **/
+	border-color:rgba(var(--active-border-color-r, var(--hover-border-color-r, var(--border-color-r))), var(--active-border-color-g, var(--hover-border-color-g, var(--border-color-g))), var(--active-border-color-b, var(--hover-border-color-b, var(--border-color-b))), var(--active-border-color-a, var(--hover-border-color-a, var(--border-color-a)))) !important;
+}
+/* focus */
+.apply-theme.with-states:focus,
+.apply-border-color.with-states:focus,
+/*-----*/
+[class*=with-focus-border-color]:focus,
+/* --kids--- */
+.kids--apply-border-color.kids--with-states > :focus,
+/*-----*/
+[class*=kids--with-focus-border-color] > :focus {
+	/** Defined --focus-border-color-* rgba channels, or we fallback --hover-border-color-* rgba channels, or we fallback to base **/
+	border-color:rgba(var(--focus-border-color-r, var(--hover-border-color-r, var(--border-color-r))), var(--focus-border-color-g, var(--hover-border-color-g, var(--border-color-g))), var(--focus-border-color-b, var(--hover-border-color-b, var(--border-color-b))), var(--focus-border-color-a, var(--hover-border-color-a, var(--border-color-a)))) !important;
+}
+/* target */
+.apply-theme.with-states:target,
+.apply-border-color.with-states:target,
+/*-----*/
+[class*=with-target-border-color]:target,
+/* --kids--- */
+.kids--apply-border-color.kids--with-states > :target,
+/*-----*/
+[class*=kids--with-target-border-color] > :target {
+	/** Defined --target-border-color-* rgba channels, or we fallback --hover-border-color-* rgba channels, or we fallback to base **/
+	border-color:rgba(var(--target-border-color-r, var(--hover-border-color-r, var(--border-color-r))), var(--target-border-color-g, var(--hover-border-color-g, var(--border-color-g))), var(--target-border-color-b, var(--hover-border-color-b, var(--border-color-b))), var(--target-border-color-a, var(--hover-border-color-a, var(--border-color-a)))) !important;
+}
+/* disabled */
+.apply-theme.with-states:disabled,
+.apply-border-color.with-states:disabled,
+/*-----*/
+[class*=with-disabled-border-color]:disabled,
+/* --kids--- */
+.kids--apply-border-color.kids--with-states > :disabled,
+/*-----*/
+[class*=kids--with-disabled-border-color] > :disabled {
+	/** Defined --disabled-border-color-* rgba channels, or we fallback to base **/
+	border-color:rgba(var(--disabled-border-color-r, var(--border-color-r)), var(--disabled-border-color-g, var(--border-color-g)), var(--disabled-border-color-b, var(--border-color-b)), var(--disabled-border-color-a, var(--border-color-a))) !important;
+}
+
+/* 
+ * --------
+ * SHADOW
+ * --------
+ */
+ 
+/* apply the defined shadow in scope */
+.apply-shadow,
+/* e.g: with-shadow-red */
+[class*=with-shadow],
+/* apply the defined shadow in scope to kids */
+.kids--apply-shadow > *,
+/* e.g: kids--with-shadow-red */
+[class*=kids--with-shadow] > * {
+	box-shadow:var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-spread) rgba(var(--shadow-color-r), var(--shadow-color-g), var(--shadow-color-b), var(--shadow-color-a)) var(--shadow-inset);
+}
+/* hover */
+.apply-shadow.with-states[aria-highlighted],
+.apply-shadow.with-states:hover,
+/*-----*/
+[class*=with-hover-shadow][aria-highlighted],
+[class*=with-hover-shadow]:hover,
+/* --kids--- */
+.kids--apply-shadow.kids--with-states > [aria-highlighted],
+.kids--apply-shadow.kids--with-states > :hover,
+/*-----*/
+[class*=kids--with-hover-shadow] > [aria-highlighted],
+[class*=kids--with-hover-shadow] > :hover {
+	/** Defined --hover-shadow-color-* rgba channels, or we fallback to base **/
+	box-shadow:var(--hover-shadow-x, var(--shadow-x)) var(--hover-shadow-y, var(--shadow-y)) var(--hover-shadow-blur, var(--shadow-blur)) var(--hover-shadow-spread, var(--shadow-spread)) rgba(var(--hover-shadow-color-r, var(--shadow-color-r)), var(--hover-shadow-color-g, var(--shadow-color-g)), var(--hover-shadow-color-b, var(--shadow-color-b)), var(--hover-shadow-color-a, var(--shadow-color-a))) var(--hover-shadow-inset, var(--shadow-inset));
+}
+/* active */
+.apply-shadow.with-states[aria-current],
+.apply-shadow.with-states[aria-selected],
+.apply-shadow.with-states[aria-checked],
+.apply-shadow.with-states.active,
+.apply-shadow.with-states:active,
+/*-----*/
+[class*=with-active-shadow][aria-current],
+[class*=with-active-shadow][aria-selected],
+[class*=with-active-shadow][aria-checked],
+[class*=with-active-shadow].active,
+[class*=with-active-shadow]:active,
+/* --kids--- */
+.kids--apply-shadow.kids--with-states > [aria-current],
+.kids--apply-shadow.kids--with-states > [aria-selected],
+.kids--apply-shadow.kids--with-states > [aria-checked],
+.kids--apply-shadow.kids--with-states > .active,
+.kids--apply-shadow.kids--with-states > :active,
+/*-----*/
+[class*=kids--with-active-shadow] > [aria-current],
+[class*=kids--with-active-shadow] > [aria-selected],
+[class*=kids--with-active-shadow] > [aria-checked],
+[class*=kids--with-active-shadow] > .active,
+[class*=kids--with-active-shadow] > :active {
+	/** Defined --active-shadow-color-* rgba channels, or we fallback --hover-shadow-color-* rgba channels, or we fallback to base **/
+	box-shadow:var(--active-shadow-x, var(--hover-shadow-x, var(--shadow-x))) var(--active-shadow-y, var(--hover-shadow-y, var(--shadow-y))) var(--active-shadow-blur, var(--hover-shadow-blur, var(--shadow-blur))) var(--active-shadow-spread, var(--hover-shadow-spread, var(--shadow-spread))) rgba(var(--active-shadow-color-r, var(--hover-shadow-color-r, var(--shadow-color-r))), var(--active-shadow-color-g, var(--hover-shadow-color-g, var(--shadow-color-g))), var(--active-shadow-color-b, var(--hover-shadow-color-b, var(--shadow-color-b))), var(--active-shadow-color-a, var(--hover-shadow-color-a, var(--shadow-color-a)))) var(--active-shadow-inset, var(--hover-shadow-inset, var(--shadow-inset)));
+}
+/* focus */
+.apply-shadow.with-states:focus,
+/*-----*/
+[class*=with-focus-shadow]:focus,
+/* --kids--- */
+.kids--apply-shadow.kids--with-states > :focus,
+/*-----*/
+[class*=kids--with-focus-shadow] > :focus {
+	/** Defined --focus-shadow-color-* rgba channels, or we fallback --hover-shadow-color-* rgba channels, or we fallback to base **/
+	box-shadow:var(--focus-shadow-x, var(--hover-shadow-x, var(--shadow-x))) var(--focus-shadow-y, var(--hover-shadow-y, var(--shadow-y))) var(--focus-shadow-blur, var(--hover-shadow-blur, var(--shadow-blur))) var(--focus-shadow-spread, var(--hover-shadow-spread, var(--shadow-spread))) rgba(var(--focus-shadow-color-r, var(--hover-shadow-color-r, var(--shadow-color-r))), var(--focus-shadow-color-g, var(--hover-shadow-color-g, var(--shadow-color-g))), var(--focus-shadow-color-b, var(--hover-shadow-color-b, var(--shadow-color-b))), var(--focus-shadow-color-a, var(--hover-shadow-color-a, var(--shadow-color-a)))) var(--focus-shadow-inset, var(--hover-shadow-inset, var(--shadow-inset)));
+}
+/* target */
+.apply-shadow.with-states:target,
+/*-----*/
+[class*=with-target-shadow]:target,
+/* --kids--- */
+.kids--apply-shadow.kids--with-states > :target,
+/*-----*/
+[class*=kids--with-target-shadow] > :target {
+	/** Defined --target-shadow-color-* rgba channels, or we fallback --hover-shadow-color-* rgba channels, or we fallback to base **/
+	box-shadow:var(--target-shadow-x, var(--hover-shadow-x, var(--shadow-x))) var(--target-shadow-y, var(--hover-shadow-y, var(--shadow-y))) var(--target-shadow-blur, var(--hover-shadow-blur, var(--shadow-blur))) var(--target-shadow-spread, var(--hover-shadow-spread, var(--shadow-spread))) rgba(var(--target-shadow-color-r, var(--hover-shadow-color-r, var(--shadow-color-r))), var(--target-shadow-color-g, var(--hover-shadow-color-g, var(--shadow-color-g))), var(--target-shadow-color-b, var(--hover-shadow-color-b, var(--shadow-color-b))), var(--target-shadow-color-a, var(--hover-shadow-color-a, var(--shadow-color-a)))) var(--target-shadow-inset, var(--hover-shadow-inset, var(--shadow-inset)));
+}
+/* disabled */
+.apply-shadow.with-states:disabled,
+/*-----*/
+[class*=with-disabled-shadow]:disabled,
+/* --kids--- */
+.kids--apply-shadow.kids--with-states > :disabled,
+/*-----*/
+[class*=kids--with-disabled-shadow] > :disabled {
+	/** Defined --disabled-shadow-color-* rgba channels, or we fallback to base **/
+	box-shadow:var(--disabled-shadow-x, var(--shadow-x)) var(--disabled-shadow-y, var(--shadow-y)) var(--disabled-shadow-blur, var(--shadow-blur)) var(--disabled-shadow-spread, var(--shadow-spread)) rgba(var(--disabled-shadow-color-r, var(--shadow-color-r)), var(--disabled-shadow-color-g, var(--shadow-color-g)), var(--disabled-shadow-color-b, var(--shadow-color-b)), var(--disabled-shadow-color-a, var(--shadow-color-a))) var(--disabled-shadow-inset, var(--shadow-inset));
+}
+
+/** STATES INHERITANCE ----------------------------------------------------------------- */
+
+/* 
+ * --------
+ * COLOR
+ * --------
+ */
+ 
+.color-inherit {
+	color:inherit;
+}
+/* hover */
+.hover-color-inherit[aria-highlighted],
+.hover-color-inherit:hover {
+	color:inherit;
+}
+/* active */
+.active-color-inherit[aria-current],
+.active-color-inherit[aria-selected],
+.active-color-inherit[aria-checked],
+.active-color-inherit.active,
+.active-color-inherit:active {
+	color:inherit;
+}
+/* focus */
+.focus-color-inherit:focus {
+	color:inherit;
+}
+/* target */
+.target-color-inherit:target {
+	color:inherit;
+}
+/* disabled */
+.disabled-color-inherit:disabled {
+	color:inherit;
+}
+
+/* 
+ * --------
+ * BACKGROUND
+ * --------
+ */
+ 
+.background-color-inherit {
+	background-color:inherit;
+}
+/* hover */
+.hover-background-color-inherit[aria-highlighted],
+.hover-background-color-inherit:hover {
+	background-color:inherit;
+}
+/* active */
+.active-background-color-inherit[aria-current],
+.active-background-color-inherit[aria-selected],
+.active-background-color-inherit[aria-checked],
+.active-background-color-inherit.active,
+.active-background-color-inherit:active {
+	background-color:inherit;
+}
+/* focus */
+.focus-background-color-inherit:focus {
+	background-color:inherit;
+}
+/* target */
+.target-background-color-inherit:target {
+	background-color:inherit;
+}
+/* disabled */
+.disabled-background-color-inherit:disabled {
+	background-color:inherit;
+}
+
+/* --- BACKGROUND IMAGE ---*/
+
+.background-image-inherit {
+	background-image:inherit;
+}
+/* hover */
+.hover-background-image-inherit[aria-highlighted],
+.hover-background-image-inherit:hover {
+	background-image:inherit;
+}
+/* active */
+.active-background-image-inherit[aria-current],
+.active-background-image-inherit[aria-selected],
+.active-background-image-inherit[aria-checked],
+.active-background-image-inherit.active,
+.active-background-image-inherit:active {
+	background-image:inherit;
+}
+/* focus */
+.focus-background-image-inherit:focus {
+	background-image:inherit;
+}
+/* target */
+.target-background-image-inherit:target {
+	background-image:inherit;
+}
+/* disabled */
+.disabled-background-image-inherit:disabled {
+	background-image:inherit;
+}
+
+/* 
+ * --------
+ * BORDER
+ * --------
+ */
+ 
+.border-color-inherit {
+	border-color:inherit;
+}
+/* hover */
+.hover-border-color-inherit[aria-highlighted],
+.hover-border-color-inherit:hover {
+	border-color:inherit;
+}
+/* active */
+.active-border-color-inherit[aria-current],
+.active-border-color-inherit[aria-selected],
+.active-border-color-inherit[aria-checked],
+.active-border-color-inherit.active,
+.active-border-color-inherit:active {
+	border-color:inherit;
+}
+/* focus */
+.focus-border-color-inherit:focus {
+	border-color:inherit;
+}
+/* target */
+.target-border-color-inherit:target {
+	border-color:inherit;
+}
+/* disabled */
+.disabled-border-color-inherit:disabled {
+	border-color:inherit;
+}
+
+/* 
+ * --------
+ * SHADOW
+ * --------
+ */
+ 
+.shadow-inherit {
+	box-shadow:inherit;
+}
+/* hover */
+.hover-shadow-inherit[aria-highlighted],
+.hover-shadow-inherit:hover {
+	box-shadow:inherit;
+}
+/* active */
+.active-shadow-inherit[aria-current],
+.active-shadow-inherit[aria-selected],
+.active-shadow-inherit[aria-checked],
+.active-shadow-inherit.active,
+.active-shadow-inherit:active {
+	box-shadow:inherit;
+}
+/* focus */
+.focus-shadow-inherit:focus {
+	box-shadow:inherit;
+}
+/* target */
+.target-shadow-inherit:target {
+	box-shadow:inherit;
+}
+/* disabled */
+.disabled-shadow-inherit:disabled {
+	box-shadow:inherit;
+}
+
+/**
+ * ----------------------
+ * OPACITY
+ * ----------------------
+ */
+
+.hover-opacity-0:hover,
+.hover-opacity-0[aria-highlighted],
+/* active */
+.active-opacity-0:active,
+.active-opacity-0.active,
+.active-opacity-0[aria-selected="true"],
+.active-opacity-0[aria-checked="true"],
+.active-opacity-0[aria-current^="false"],
+/* focus & target */
+.focus-opacity-0:focus,
+.target-opacity-0:target,
+.opacity-0 {
+	-moz-opacity:0 !important;
+	-webkit-opacity:0 !important;
+	opacity:0 !important;
+}
+.hover-opacity-xs:hover,
+.hover-opacity-xs[aria-highlighted],
+/* active */
+.active-opacity-xs:active,
+.active-opacity-xs.active,
+.active-opacity-xs[aria-selected="true"],
+.active-opacity-xs[aria-checked="true"],
+.active-opacity-xs[aria-current^="false"],
+/* focus & target */
+.focus-opacity-xs:focus,
+.target-opacity-xs:target,
+.opacity-xs {
+	-moz-opacity:0.125 !important;
+	-webkit-opacity:0.125 !important;
+	opacity:0.125 !important;
+}
+.hover-opacity-sm:hover,
+.hover-opacity-sm[aria-highlighted],
+/* active */
+.active-opacity-sm:active,
+.active-opacity-sm.active,
+.active-opacity-sm[aria-selected="true"],
+.active-opacity-sm[aria-checked="true"],
+.active-opacity-sm[aria-current^="false"],
+/* focus & target */
+.focus-opacity-sm:focus,
+.target-opacity-sm:target,
+.opacity-sm {
+	-moz-opacity:0.25 !important;
+	-webkit-opacity:0.25 !important;
+	opacity:0.25 !important;
+}
+.hover-opacity-md:hover,
+.hover-opacity-md[aria-highlighted],
+/* active */
+.active-opacity-md:active,
+.active-opacity-md.active,
+.active-opacity-md[aria-selected="true"],
+.active-opacity-md[aria-checked="true"],
+.active-opacity-md[aria-current^="false"],
+/* focus & target */
+.focus-opacity-md:focus,
+.target-opacity-md:target,
+.opacity-md {
+	-moz-opacity:0.5 !important;
+	-webkit-opacity:0.5 !important;
+	opacity:0.5 !important;
+}
+.hover-opacity-lg:hover,
+.hover-opacity-lg[aria-highlighted],
+/* active */
+.active-opacity-lg:active,
+.active-opacity-lg.active,
+.active-opacity-lg[aria-selected="true"],
+.active-opacity-lg[aria-checked="true"],
+.active-opacity-lg[aria-current^="false"],
+/* focus & target */
+.focus-opacity-lg:focus,
+.target-opacity-lg:target,
+.opacity-lg {
+	-moz-opacity:0.75 !important;
+	-webkit-opacity:0.75 !important;
+	opacity:0.75 !important;
+}
+.hover-opacity-xl:hover,
+.hover-opacity-xl[aria-highlighted],
+/* active */
+.active-opacity-xl:active,
+.active-opacity-xl.active,
+.active-opacity-xl[aria-selected="true"],
+.active-opacity-xl[aria-checked="true"],
+.active-opacity-xl[aria-current^="false"],
+/* focus & target */
+.focus-opacity-xl:focus,
+.target-opacity-xl:target,
+.opacity-xl {
+	-moz-opacity:0.95 !important;
+	-webkit-opacity:0.95 !important;
+	opacity:0.95 !important;
+}
+.hover-opacity-none:hover,
+.hover-opacity-none[aria-highlighted],
+/* active */
+.active-opacity-none:active,
+.active-opacity-none.active,
+.active-opacity-none[aria-selected="true"],
+.active-opacity-none[aria-checked="true"],
+.active-opacity-none[aria-current^="false"],
+/* focus & target */
+.focus-opacity-none:focus,
+.target-opacity-none:target,
+.opacity-none {
+	-moz-opacity:1 !important;
+	-webkit-opacity:1 !important;
+	opacity:1 !important;
+}
+
+/**
+ * ----------------------
+ * BLUR
+ * ----------------------
+ */
+
+.hover-blur-none:hover,
+.hover-blur-none[aria-highlighted],
+/* active */
+.active-blur-none:active,
+.active-blur-none.active,
+.active-blur-none[aria-selected="true"],
+.active-blur-none[aria-checked="true"],
+.active-blur-none[aria-current^="false"],
+/* focus & target */
+.focus-blur-none:focus,
+.target-blur-none:target,
+.blur-none {
+	-moz-filter:blur(0px) !important;
+	-webkit-filter:blur(0px) !important;
+	filter:blur(0px) !important;
+}
+.hover-blur-xs:hover,
+.hover-blur-xs[aria-highlighted],
+/* active */
+.active-blur-xs:active,
+.active-blur-xs.active,
+.active-blur-xs[aria-selected="true"],
+.active-blur-xs[aria-checked="true"],
+.active-blur-xs[aria-current^="false"],
+/* focus & target */
+.focus-blur-xs:focus,
+.target-blur-xs:target,
+.blur-xs {
+	-moz-filter:blur(1.25px) !important;
+	-webkit-filter:blur(1.25px) !important;
+	filter:blur(1.25px) !important;
+}
+.hover-blur-sm:hover,
+.hover-blur-sm[aria-highlighted],
+/* active */
+.active-blur-sm:active,
+.active-blur-sm.active,
+.active-blur-sm[aria-selected="true"],
+.active-blur-sm[aria-checked="true"],
+.active-blur-sm[aria-current^="false"],
+/* focus & target */
+.focus-blur-sm:focus,
+.target-blur-sm:target,
+.blur-sm {
+	-moz-filter:blur(2.5px) !important;
+	-webkit-filter:blur(2.5px) !important;
+	filter:blur(2.5px) !important;
+}
+.hover-blur-md:hover,
+.hover-blur-md[aria-highlighted],
+/* active */
+.active-blur-md:active,
+.active-blur-md.active,
+.active-blur-md[aria-selected="true"],
+.active-blur-md[aria-checked="true"],
+.active-blur-md[aria-current^="false"],
+/* focus & target */
+.focus-blur-md:focus,
+.target-blur-md:target,
+.blur-md {
+	-moz-filter:blur(5px) !important;
+	-webkit-filter:blur(5px) !important;
+	filter:blur(5px) !important;
+}
+.hover-blur-lg:hover,
+.hover-blur-lg[aria-highlighted],
+/* active */
+.active-blur-lg:active,
+.active-blur-lg.active,
+.active-blur-lg[aria-selected="true"],
+.active-blur-lg[aria-checked="true"],
+.active-blur-lg[aria-current^="false"],
+/* focus & target */
+.focus-blur-lg:focus,
+.target-blur-lg:target,
+.blur-lg {
+	-moz-filter:blur(7.5px) !important;
+	-webkit-filter:blur(7.5px) !important;
+	filter:blur(7.5px) !important;
+}
+.hover-blur-xl:hover,
+.hover-blur-xl[aria-highlighted],
+/* active */
+.active-blur-xl:active,
+.active-blur-xl.active,
+.active-blur-xl[aria-selected="true"],
+.active-blur-xl[aria-checked="true"],
+.active-blur-xl[aria-current^="false"],
+/* focus & target */
+.focus-blur-xl:focus,
+.target-blur-xl:target,
+.blur-xl {
+	-moz-filter:blur(9.5px) !important;
+	-webkit-filter:blur(9.5px) !important;
+	filter:blur(9.5px) !important;
+}

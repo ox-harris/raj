@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+.lead {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+  
+/** THEMES ----------------------------------------------------------------- */
+
+/* 
+ * --------
+ * PRIMARY:PURPLE
+ * --------
+ */
+ 
+.define-theme-primary,
+.with-theme-primary,
+.define-color-theme-primary,
+.with-color-theme-primary {
+	--color-r:0; /* <-- */
+	--color-g:110;
+	--color-b:110; /* <-- */
+}
+.define-theme-primary,
+.with-theme-primary,
+.define-border-theme-primary,
+.with-border-theme-primary {
+	--border-color-r:0; /* <-- */
+	--border-color-g:110;
+	--border-color-b:110; /* <-- */
+}
+.define-theme-primary,
+.with-theme-primary,
+.define-shadow-theme-primary,
+.with-shadow-theme-primary {
+	--shadow-color-r:0; /* <-- */
+	--shadow-color-g:110;
+	--shadow-color-b:110; /* <-- */
+}
+.define-theme-primary,
+.with-theme-primary,
+.define-background-theme-primary,
+.with-background-theme-primary {
+	--background-color-r:100; /* <-- */
+	--background-color-g:220;
+	--background-color-b:220; /* <-- */
+}
+.define-theme-primary,
+.with-theme-primary {
+	/* --COLOR-- */
+	--hover-color-r: 20;
+	--hover-color-g: 130;
+	--hover-color-b: 130;
+	/* --BACKGROUND-- */
+	--hover-background-color-r: 100;
+	--hover-background-color-g: 240;
+	--hover-background-color-b: 240;
+	/* --BORDER-- */
+	--hover-border-color-r: 20;
+	--hover-border-color-g: 130;
+	--hover-border-color-b: 130;
+	/* --SHADOW-- */
+	--hover-shadow-color-g: 20;
+	--hover-shadow-color-g: 130;
+	--hover-shadow-color-g: 130;
+}
+
+/* 
+ * --------
+ * PRIMARY/STRONG:PURPLE
+ * --------
+ */
+
+.define-theme-primary-alt,
+.with-theme-primary-alt,
+.define-color-theme-primary-alt,
+.with-color-theme--primary-alt {
+	--color-r:255; /* <-- */
+	--color-g:255;
+	--color-b:255; /* <-- */
+}
+.define-theme-primary-alt,
+.with-theme-primary-alt,
+.define-border-theme-primary-alt,
+.with-border-theme--primary-alt {
+	--border-color-r:255; /* <-- */
+	--border-color-g:255;
+	--border-color-b:255; /* <-- */
+}
+.define-theme-primary-alt,
+.with-theme-primary-alt,
+.define-shadow-theme-primary-alt,
+.with-shadow-theme--primary-alt {
+	--shadow-color-r:50; /* <-- */
+	--shadow-color-g:150;
+	--shadow-color-b:150; /* <-- */
+}
+.define-theme-primary-alt,
+.with-theme-primary-alt,
+.define-background-theme-primary-alt,
+.with-background-theme--primary-alt {
+	--background-color-r:0; /* <-- */
+	--background-color-g:110;
+	--background-color-b:110; /* <-- */
+}
+.define-theme-primary-alt,
+.with-theme-primary-alt {
+	/* --COLOR-- */
+	--hover-color-r: 255;
+	--hover-color-g: 255;
+	--hover-color-b: 255;
+	/* --BACKGROUND-- */
+	--hover-background-color-r: 0;
+	--hover-background-color-g: 115;
+	--hover-background-color-b: 115;
+	/* --BORDER-- */
+	--hover-border-color-r: 0;
+	--hover-border-color-g: 100;
+	--hover-border-color-b: 100;
+	/* --SHADOW-- */
+	--hover-shadow-color-r: 0;
+	--hover-shadow-color-g: 100;
+	--hover-shadow-color-b: 100;
+}

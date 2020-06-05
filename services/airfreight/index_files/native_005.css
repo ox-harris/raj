@@ -1,0 +1,580 @@
+@charset "utf-8";
+
+/** REGULAR THEMES ----------------------------------------------------------------- */
+
+/* 
+ * --------
+ * WHITE/BLACK
+ * --------
+ */
+ 
+.define-theme-black,
+.with-theme-black,
+.define-color-theme-black,
+.with-color-theme-black {
+	--color-r:255; /* <-- */
+	--color-g:255; /* <-- */
+	--color-b:255; /* <-- */
+}
+.define-theme-black,
+.with-theme-black,
+.define-border-theme-black,
+.with-border-theme-black {
+	--border-color-r:255; /* <-- */
+	--border-color-g:255; /* <-- */
+	--border-color-b:255; /* <-- */
+}
+.define-theme-black,
+.with-theme-black,
+.define-shadow-theme-black,
+.with-shadow-theme-black {
+	--shadow-color-r:255; /* <-- */
+	--shadow-color-g:255; /* <-- */
+	--shadow-color-b:255; /* <-- */
+}
+.define-theme-black,
+.with-theme-black,
+.define-background-theme-black,
+.with-background-theme-black {
+	--background-color-r:0; /* <-- */
+	--background-color-g:0; /* <-- */
+	--background-color-b:0; /* <-- */
+}
+.define-theme-black,
+.with-theme-black {
+	/* --COLOR-- */
+	--hover-color-r: 240;
+	--hover-color-g: 240;
+	--hover-color-b: 240;
+	/* --BACKGROUND-- */
+	--hover-background-color-r: 25;
+	--hover-background-color-g: 25;
+	--hover-background-color-b: 25;
+	/* --BORDER-- */
+	--hover-border-color-r: 240;
+	--hover-border-color-g: 240;
+	--hover-border-color-b: 240;
+	/* --SHADOW-- */
+	--hover-shadow-color-r: 240;
+	--hover-shadow-color-g: 240;
+	--hover-shadow-color-b: 240;
+}
+
+/* 
+ * --------
+ * BLACK/WHITE
+ * --------
+ */
+ 
+.define-theme-white,
+.with-theme-white,
+.define-color-theme-white,
+.with-color-theme-white {
+	--color-r:100; /* <-- */
+	--color-g:100; /* <-- */
+	--color-b:100; /* <-- */
+}
+.define-theme-white,
+.with-theme-white,
+.define-border-theme-white,
+.with-border-theme-white {
+	--border-color-r:100; /* <-- */
+	--border-color-g:100; /* <-- */
+	--border-color-b:100; /* <-- */
+}
+.define-theme-white,
+.with-theme-white,
+.define-shadow-theme-white,
+.with-shadow-theme-white {
+	--shadow-color-r:100; /* <-- */
+	--shadow-color-g:100; /* <-- */
+	--shadow-color-b:100; /* <-- */
+}
+.define-theme-white,
+.with-theme-white,
+.define-background-theme-white,
+.with-background-theme-white {
+	--background-color-r:255; /* <-- */
+	--background-color-g:255; /* <-- */
+	--background-color-b:255; /* <-- */
+}
+.define-theme-white,
+.with-theme-white {
+	/* --COLOR-- */
+	--hover-color-r: 0;
+	--hover-color-g: 0;
+	--hover-color-b: 0;
+	/* --BACKGROUND-- */
+	--hover-background-color-r: 250;
+	--hover-background-color-g: 250;
+	--hover-background-color-b: 250;
+	/* --BORDER-- */
+	--hover-border-color-r: 40;
+	--hover-border-color-g: 40;
+	--hover-border-color-b: 40;
+	/* --SHADOW-- */
+	--hover-shadow-color-r: 40;
+	--hover-shadow-color-g: 40;
+	--hover-shadow-color-b: 40;
+}
+
+/* 
+ * --------
+ * SILVER/DARK
+ * --------
+ */
+ 
+.define-theme-dark,
+.with-theme-dark,
+.define-color-theme-dark,
+.with-color-theme-dark {
+	--color-r:200; /* <-- */
+	--color-g:200; /* <-- */
+	--color-b:200; /* <-- */
+}
+.define-theme-dark,
+.with-theme-dark,
+.define-border-theme-dark,
+.with-border-theme-dark {
+	--border-color-r:200; /* <-- */
+	--border-color-g:200; /* <-- */
+	--border-color-b:200; /* <-- */
+}
+.define-theme-dark,
+.with-theme-dark,
+.define-shadow-theme-dark,
+.with-shadow-theme-dark {
+	--shadow-color-r:200; /* <-- */
+	--shadow-color-g:200; /* <-- */
+	--shadow-color-b:200; /* <-- */
+}
+.define-theme-dark,
+.with-theme-dark,
+.define-background-theme-dark,
+.with-background-theme-dark {
+	--background-color-r: 100; /* <-- */
+	--background-color-g: 100; /* <-- */
+	--background-color-b: 100; /* <-- */
+}
+.define-theme-dark,
+.with-theme-dark {
+	/* --COLOR-- */
+	--hover-color-r: 220;
+	--hover-color-g: 220;
+	--hover-color-b: 220;
+	/* --BACKGROUND-- */
+	--hover-background-color-r: 85;
+	--hover-background-color-g: 85;
+	--hover-background-color-b: 85;
+	/* --BORDER-- */
+	--hover-border-color-r: 220;
+	--hover-border-color-g: 220;
+	--hover-border-color-b: 220;
+	/* --SHADOW-- */
+	--hover-shadow-color-r: 220;
+	--hover-shadow-color-g: 220;
+	--hover-shadow-color-b: 220;
+}
+
+/* 
+ * --------
+ * GRAY/LIGHT
+ * --------
+ */
+ 
+.define-theme-light,
+.with-theme-light,
+.define-color-theme-light,
+.with-color-theme-light {
+	--color-r:135; /* <-- */
+	--color-g:135; /* <-- */
+	--color-b:135; /* <-- */
+}
+.define-theme-light,
+.with-theme-light,
+.define-border-theme-light,
+.with-border-theme-light {
+	--border-color-r:135; /* <-- */
+	--border-color-g:135; /* <-- */
+	--border-color-b:135; /* <-- */
+}
+.define-theme-light,
+.with-theme-light,
+.define-shadow-theme-light,
+.with-shadow-theme-light {
+	--shadow-color-r:135; /* <-- */
+	--shadow-color-g:135; /* <-- */
+	--shadow-color-b:135; /* <-- */
+}
+.define-theme-light,
+.with-theme-light,
+.define-background-theme-light,
+.with-background-theme-light {
+	--background-color-r: 235; /* <-- */
+	--background-color-g: 235; /* <-- */
+	--background-color-b: 235; /* <-- */
+}
+.define-theme-light,
+.with-theme-light {
+	/* --COLOR-- */
+	--hover-color-r: 110;
+	--hover-color-g: 110;
+	--hover-color-b: 110;
+	/* --BACKGROUND-- */
+	--hover-background-color-r: 240;
+	--hover-background-color-g: 240;
+	--hover-background-color-b: 240;
+	/* --BORDER-- */
+	--hover-border-color-r: 110;
+	--hover-border-color-g: 110;
+	--hover-border-color-b: 110;
+	/* --SHADOW-- */
+	--hover-shadow-color-r: 110;
+	--hover-shadow-color-g: 110;
+	--hover-shadow-color-b: 110;
+}
+
+/** GRADIENT THEMES ----------------------------------------------------------------- */
+
+/* 
+ * --------
+ * WHITE/BLACK
+ * --------
+ */
+ 
+.define-gradient-white,
+.with-gradient-white {
+	/* start color */
+	--gradient-start-color-r: 255;
+	--gradient-start-color-g: 255;
+	--gradient-start-color-b: 255;
+	--gradient-start-color-a: 1;
+	/* end color */
+	--gradient-end-color-r: 255;
+	--gradient-end-color-g: 255;
+	--gradient-end-color-b: 255;
+	--gradient-end-color-a: 1;
+	/* hover start color */
+	--hover-gradient-start-color-r: 239;
+	--hover-gradient-start-color-g: 239;
+	--hover-gradient-start-color-b: 239;
+	--hover-gradient-start-color-a: 1;
+	/* hover end color */
+	--hover-gradient-end-color-r: 239;
+	--hover-gradient-end-color-g: 239;
+	--hover-gradient-end-color-b: 239;
+	--hover-gradient-end-color-a: 1;
+}
+ 
+.define-gradient-black,
+.with-gradient-black {
+	/* start color */
+	--gradient-start-color-r: 0;
+	--gradient-start-color-g: 0;
+	--gradient-start-color-b: 0;
+	--gradient-start-color-a: 1;
+	/* end color */
+	--gradient-end-color-r: 0;
+	--gradient-end-color-g: 0;
+	--gradient-end-color-b: 0;
+	--gradient-end-color-a: 1;
+	/* hover start color */
+	--hover-gradient-start-color-r: 50;
+	--hover-gradient-start-color-g: 50;
+	--hover-gradient-start-color-b: 50;
+	--hover-gradient-start-color-a: 1;
+	/* hover end color */
+	--hover-gradient-end-color-r: 50;
+	--hover-gradient-end-color-g: 50;
+	--hover-gradient-end-color-b: 50;
+	--hover-gradient-end-color-a: 1;
+}
+
+/* 
+ * --------
+ * LIGHT/DARK
+ * --------
+ */
+ 
+.define-gradient-light,
+.with-gradient-light {
+	/* start color */
+	--gradient-start-color-r: 235;
+	--gradient-start-color-g: 235;
+	--gradient-start-color-b: 235;
+	--gradient-start-color-a: 1;
+	/* end color */
+	--gradient-end-color-r: 235;
+	--gradient-end-color-g: 235;
+	--gradient-end-color-b: 235;
+	--gradient-end-color-a: 1;
+	/* hover start color */
+	--hover-gradient-start-color-r: 240;
+	--hover-gradient-start-color-g: 240;
+	--hover-gradient-start-color-b: 240;
+	--hover-gradient-start-color-a: 1;
+	/* hover end color */
+	--hover-gradient-end-color-r: 240;
+	--hover-gradient-end-color-g: 240;
+	--hover-gradient-end-color-b: 240;
+	--hover-gradient-end-color-a: 1;
+}
+ 
+.define-gradient-dark,
+.with-gradient-dark {
+	/* start color */
+	--gradient-start-color-r: 135;
+	--gradient-start-color-g: 135;
+	--gradient-start-color-b: 135;
+	--gradient-start-color-a: 1;
+	/* end color */
+	--gradient-end-color-r: 135;
+	--gradient-end-color-g: 135;
+	--gradient-end-color-b: 135;
+	--gradient-end-color-a: 1;
+	/* hover start color */
+	--hover-gradient-start-color-r: 140;
+	--hover-gradient-start-color-g: 140;
+	--hover-gradient-start-color-b: 140;
+	--hover-gradient-start-color-a: 1;
+	/* hover end color */
+	--hover-gradient-end-color-r: 140;
+	--hover-gradient-end-color-g: 140;
+	--hover-gradient-end-color-b: 140;
+	--hover-gradient-end-color-a: 1;
+}
+
+/** ALERT THEMES ----------------------------------------------------------------- */
+
+/* 
+ * --------
+ * SUCCESS:GREEN
+ * --------
+ */
+ 
+.define-theme-success,
+.with-theme-success,
+.define-color-theme-success,
+.with-color-theme-success {
+	--color-r:0;
+	--color-g:155; /* <-- */
+	--color-b:0;
+}
+.define-theme-success,
+.with-theme-success,
+.define-border-theme-success,
+.with-border-theme-success {
+	--border-color-r:0;
+	--border-color-g:155; /* <-- */
+	--border-color-b:0;
+}
+.define-theme-success,
+.with-theme-success,
+.define-shadow-theme-success,
+.with-shadow-theme-success {
+	--shadow-color-r:0;
+	--shadow-color-g:155; /* <-- */
+	--shadow-color-b:0;
+}
+.define-theme-success,
+.with-theme-success,
+.define-background-theme-success,
+.with-background-theme-success {
+	--background-color-r:220;
+	--background-color-g:255; /* <-- */
+	--background-color-b:220;
+}
+.define-theme-success,
+.with-theme-success {
+	/* --COLOR-- */
+	--hover-color-r: 25;
+	--hover-color-g:155; /* <-- */
+	--hover-color-b: 25;
+	/* --BACKGROUND-- */
+	--hover-background-color-r: 210;
+	--hover-background-color-g:250; /* <-- */
+	--hover-background-color-b: 210;
+	/* --BORDER-- */
+	--hover-border-color-r: 25;
+	--hover-border-color-g:155; /* <-- */
+	--hover-border-color-b: 25;
+	/* --SHADOW-- */
+	--hover-shadow-color-r: 25;
+	--hover-shadow-color-g:155; /* <-- */
+	--hover-shadow-color-b: 25;
+}
+
+/* 
+ * --------
+ * INFO:BLUE
+ * --------
+ */
+ 
+.define-theme-info,
+.with-theme-info,
+.define-color-theme-info,
+.with-color-theme-info {
+	--color-r:0;
+	--color-g:0;
+	--color-b:255; /* <-- */
+}
+.define-theme-info,
+.with-theme-info,
+.define-border-theme-info,
+.with-border-theme-info {
+	--border-color-r:0;
+	--border-color-g:0;
+	--border-color-b:255; /* <-- */
+}
+.define-theme-info,
+.with-theme-info,
+.define-shadow-theme-info,
+.with-shadow-theme-info {
+	--shadow-color-r:0;
+	--shadow-color-g:0;
+	--shadow-color-b:255; /* <-- */
+}
+.define-theme-info,
+.with-theme-info,
+.define-background-theme-info,
+.with-background-theme-info {
+	--background-color-r:230;
+	--background-color-g:230;
+	--background-color-b:255; /* <-- */
+}
+.define-theme-info,
+.with-theme-info {
+	/* --COLOR-- */
+	--hover-color-r: 105;
+	--hover-color-g: 105;
+	--hover-color-b: 255; /* <-- */
+	/* --BACKGROUND-- */
+	--hover-background-color-r: 235;
+	--hover-background-color-g: 235;
+	--hover-background-color-b: 255; /* <-- */
+	/* --BORDER-- */
+	--hover-border-color-r: 105;
+	--hover-border-color-g: 105;
+	--hover-border-color-b: 255; /* <-- */
+	/* --SHADOW-- */
+	--hover-shadow-color-r: 105;
+	--hover-shadow-color-g: 105;
+	--hover-shadow-color-b: 255; /* <-- */
+}
+
+/* 
+ * --------
+ * WARNING:ORANGE
+ * --------
+ */
+ 
+.define-theme-warning,
+.with-theme-warning,
+.define-color-theme-warning,
+.with-color-theme-warning {
+	--color-r:255; /* <-- */
+	--color-g:65;
+	--color-b:0;
+}
+.define-theme-warning,
+.with-theme-warning,
+.define-border-theme-warning,
+.with-border-theme-warning {
+	--border-color-r:255; /* <-- */
+	--border-color-g:65;
+	--border-color-b:0;
+}
+.define-theme-warning,
+.with-theme-warning,
+.define-shadow-theme-warning,
+.with-shadow-theme-warning {
+	--shadow-color-r:255; /* <-- */
+	--shadow-color-g:65;
+	--shadow-color-b:0;
+}
+.define-theme-warning,
+.with-theme-warning,
+.define-background-theme-warning,
+.with-background-theme-warning {
+	/* 100%, 81.2%, 62% */
+	--background-color-r:255; /* <-- */
+	--background-color-g:245;
+	--background-color-b:200;
+}
+.define-theme-warning,
+.with-theme-warning {
+	/* --COLOR-- */
+	--hover-color-r: 255; /* <-- */
+	--hover-color-g: 120;
+	--hover-color-b: 105;
+	/* --BACKGROUND-- */
+	--hover-background-color-r: 255; /* <-- */
+	--hover-background-color-g: 250;
+	--hover-background-color-b: 205;
+	/* --BORDER-- */
+	--hover-border-color-r: 255; /* <-- */
+	--hover-border-color-g: 120;
+	--hover-border-color-b: 105;
+	/* --SHADOW-- */
+	--hover-shadow-color-r: 255; /* <-- */
+	--hover-shadow-color-g: 250;
+	--hover-shadow-color-b: 105;
+}
+
+/* 
+ * --------
+ * DANGER:RED
+ * --------
+ */
+ 
+.define-theme-danger,
+.with-theme-danger,
+.define-color-theme-danger,
+.with-color-theme-danger {
+	--color-r:255; /* <-- */
+	--color-g:0;
+	--color-b:0;
+}
+.define-theme-danger,
+.with-theme-danger,
+.define-border-theme-danger,
+.with-border-theme-danger {
+	--border-color-r:255; /* <-- */
+	--border-color-g:0;
+	--border-color-b:0;
+}
+.define-theme-danger,
+.with-theme-danger,
+.define-shadow-theme-danger,
+.with-shadow-theme-danger {
+	--shadow-color-r:255; /* <-- */
+	--shadow-color-g:0;
+	--shadow-color-b:0;
+}
+.define-theme-danger,
+.with-theme-danger,
+.define-background-theme-danger,
+.with-background-theme-danger {
+	--background-color-r:255; /* <-- */
+	--background-color-g:230;
+	--background-color-b:230;
+}
+.define-theme-danger,
+.with-theme-danger {
+	/* --COLOR-- */
+	--hover-color-r: 255; /* <-- */
+	--hover-color-g: 105;
+	--hover-color-b: 105;
+	/* --BACKGROUND-- */
+	--hover-background-color-r: 255; /* <-- */
+	--hover-background-color-g: 235;
+	--hover-background-color-b: 235;
+	/* --BORDER-- */
+	--hover-border-color-r: 255; /* <-- */
+	--hover-border-color-g: 105;
+	--hover-border-color-b: 105;
+	/* --SHADOW-- */
+	--hover-shadow-color-r: 255; /* <-- */
+	--hover-shadow-color-g: 105;
+	--hover-shadow-color-b: 105;
+}
